@@ -1,26 +1,26 @@
-<img src="banner.png" alt="Allan Zeni · AZ Sistemas · Infraestrutura de TI, observabilidade e sistemas em Python" width="100%">
+<p align="center">
+  <img src="assets/banner.svg" width="100%" alt="Allan Zeni · AZ Sistemas · Infraestrutura de TI e observabilidade · Zabbix, Grafana, Proxmox, Active Directory · Sistemas em Python e IA aplicada · 169 hosts no Zabbix, 354 triggers escritas por mim, 7.905 testes automatizados">
+</p>
 
 **Analista de Infraestrutura de TI e desenvolvedor Python.** Pela AZ Sistemas, minha empresa, faço sistemas e automações para pequenas e médias empresas.\
 Bento Gonçalves, RS · [sistemasaz.com.br](https://sistemasaz.com.br) · [LinkedIn](https://www.linkedin.com/in/allan-zeni) · [English below](#english)
 
-Sou o único profissional de TI de um grupo da Serra Gaúcha com indústria de laticínios, parque turístico e loja. Cuido de servidores, rede, Wi-Fi entre unidades, backup e monitoramento, e desenvolvi e mantenho o sistema de gestão da indústria.
-
-| 169 | 354 | 122 | 7.905 |
-|:---|:---|:---|:---|
-| hosts no Zabbix | triggers escritas por mim | painéis no Grafana | testes automatizados no sistema de gestão |
+Sou o único profissional de TI de um grupo da Serra Gaúcha com indústria de laticínios, parque turístico e loja. Cuido de servidores, rede, Wi-Fi entre unidades, backup e monitoramento (7 dashboards e 122 painéis no Grafana), e desenvolvi e mantenho o sistema de gestão da indústria.
 
 ### Três diagnósticos
 
-- **A rede de visitantes caía e a culpa ia para o Wi-Fi.** O pool DHCP esgotava: 241 endereços para cerca de 245 aparelhos por dia, com concessão de 24 h. Ampliei a faixa e reduzi a concessão para 4 h.
-- **Gateway verde, internet parada.** A checagem só confirmava que o equipamento respondia. Reescrevi para testar TCP 443 e DNS.
-- **261 alertas "enviados" que ninguém recebeu.** O provedor recusava todos com código 2xx e a recusa no corpo da resposta. O script agora exige confirmação positiva de entrega.
+<p align="center">
+  <img src="assets/caso-dhcp.svg" width="32%" alt="Wi-Fi caindo, faltava endereço: o pool DHCP de visitantes tinha 241 endereços para cerca de 245 aparelhos por dia, com concessão de 24 horas. Ampliei a faixa para 252 e reduzi a concessão para 4 horas.">
+  <img src="assets/caso-gateway.svg" width="32%" alt="Gateway verde, internet parada: a checagem só confirmava que o equipamento respondia. Reescrevi para testar TCP 443 e DNS.">
+  <img src="assets/caso-alertas.svg" width="32%" alt="261 alertas enviados e nenhum recebido: o provedor recusava com código 2xx e a recusa no corpo. O script agora exige confirmação positiva de entrega.">
+</p>
 
 ### Projetos públicos
 
 - [**vault-vector**](https://github.com/All-zen/vault-vector) · Busca semântica híbrida e local sobre notas markdown, exposta como servidor MCP. Ollama e SQLite, nada vai para a nuvem.
 - [**NotaFlow**](https://github.com/All-zen/NotaFlow) · Automação de contas a pagar, projeto-demo com dados fictícios: lê a fatura com OCR, confere com regras e IA local e lança no ERP. Fila SQLite com máquina de estados, retry, idempotência e auditoria.
 
-O sistema de gestão da indústria é privado: 22 módulos em Python, Flask e PostgreSQL, com testes que rodam antes de cada push e no GitHub Actions e protegem regras de segurança alimentar.
+O sistema de gestão da indústria é privado: 22 módulos em Python, Flask e PostgreSQL, com 7.905 testes que rodam antes de cada push e no GitHub Actions e protegem regras de segurança alimentar.
 
 ### Como trabalho com IA
 
@@ -28,9 +28,9 @@ A arquitetura e as decisões são minhas, o código é gerado por IA a partir da
 
 ### Stack
 
-- **Infraestrutura:** Proxmox VE · Proxmox Backup Server · Windows Server · Linux · Active Directory · Sophos · VLANs · VPN · UniFi
-- **Observabilidade:** Zabbix (configurado pela API em Python) · Grafana
-- **Desenvolvimento:** Python · Flask · PostgreSQL · pytest · GitHub Actions · Docker · Ollama · MCP
+<p align="center">
+  <img src="assets/stack.svg" width="100%" alt="Infraestrutura: Proxmox VE, Proxmox Backup Server, Windows Server, Linux, Active Directory, Sophos, VLANs, VPN, UniFi. Observabilidade: Zabbix com a API em Python, Grafana. Desenvolvimento: Python, Flask, PostgreSQL, pytest, GitHub Actions, Docker, Ollama, MCP.">
+</p>
 
 Ainda não trabalhei com nuvem pública em produção nem com Kubernetes.
 
