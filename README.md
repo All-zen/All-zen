@@ -30,7 +30,7 @@ Cuido de servidores, rede, Wi-Fi com 11 pontos de acesso UniFi, backup e monitor
 
 ### Sistemas
 
-Pela AZ, desenvolvi e mantenho o sistema de gestão da indústria, em Python, Flask e PostgreSQL: mais de 20 módulos e mais de 150 migrações de banco em produção. O deploy roda por um runner próprio do GitHub Actions no Proxmox, com teste de fumaça e rollback automático, e um hook de pre-push roda os testes que cada mudança alcança (9.570 na suíte inteira). O sistema é privado. O [NotaFlow](https://github.com/All-zen/NotaFlow) é público, um projeto-demo de contas a pagar com dados fictícios que lê a fatura com OCR, confere com regras e IA local e lança no ERP.
+Desenvolvi e mantenho o sistema de gestão da indústria, em Python, Flask e PostgreSQL: mais de 20 módulos e mais de 150 migrações de banco em produção. O deploy roda por um runner próprio do GitHub Actions no Proxmox, com teste de fumaça e rollback automático, e um hook de pre-push roda os testes que cada mudança alcança (9.570 na suíte inteira). O sistema é privado. O [NotaFlow](https://github.com/All-zen/NotaFlow) é público, um projeto-demo de contas a pagar com dados fictícios que lê a fatura com OCR, confere com regras e IA local e lança no ERP.
 
 A arquitetura e as decisões são minhas, o código é gerado por IA a partir da minha especificação, e eu reviso e respondo por ele em produção. Ainda não trabalhei com nuvem pública em produção nem com Kubernetes.
 
@@ -46,7 +46,7 @@ Sistemas sob medida e automações para pequenas e médias empresas da Serra Ga�
 
 ### English
 
-**IT infrastructure analyst and Python developer.** I look after IT for a group in southern Brazil that runs a dairy plant, a tourist park and a retail store, and since October I have also managed the store and the ticket office. Through AZ Sistemas, my own company, I build and maintain the dairy plant's management system.
+**IT infrastructure analyst and Python developer.** I look after IT for a group in southern Brazil that runs a dairy plant, a tourist park and a retail store, and since October I have also managed the store and the ticket office. I also wrote and maintain the dairy plant's management system. Through AZ Sistemas, my own company, I build custom systems and automations for small and mid-sized companies.
 
 [vault-vector](https://github.com/All-zen/vault-vector) is the memory the AI works with: a hybrid search over my markdown notes that runs entirely on my own computer and is exposed as an MCP server. It currently holds 699 notes and 6,080 passages in a 71 MB index.
 
